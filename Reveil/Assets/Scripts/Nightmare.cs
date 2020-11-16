@@ -14,7 +14,7 @@ public class Nightmare : MonoBehaviour
         
  
         curSpeed += acceleration * Time.deltaTime;
-        Debug.Log("Speed: " + curSpeed);
+        //Debug.Log("Speed: " + curSpeed);
  
         if (curSpeed > maxSpeed)
             curSpeed = maxSpeed;
