@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 3.unity
     guid: 367fe9b0711b27643ab8fb3f249ffc66
   - enabled: 1
+    path: Assets/Scenes/BoxPrototyp 1.unity
+    guid: b5ee334e24a731f499058e29dc43b6e4
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 4e7af4febaee3e04c9426d11389908b2
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/Level 2_ganz.unity
     guid: d62b3c0e2ce9678489184eaae5880e35
   m_configObjects: {}
