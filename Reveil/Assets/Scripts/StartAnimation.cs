@@ -26,7 +26,25 @@ public class StartAnimation : MonoBehaviour
 
 
         //Level 3
-        if (Time.timeSinceLevelLoad >= 5)
+        if (Time.timeSinceLevelLoad >= 10)
+        {
+            m_Animator.Play("Vogel2");
+        }
+        else
+        {
+            m_Animator.Play("StopVogel2");
+        }
+
+        if (Time.timeSinceLevelLoad >= 28)
+        {
+            m_Animator.Play("Gleiter");
+        }
+        else
+        {
+            m_Animator.Play("StopGleiter");
+        }
+
+        if (Time.timeSinceLevelLoad >= 42)
         {
             m_Animator.Play("Vogel");
         }
@@ -34,5 +52,6 @@ public class StartAnimation : MonoBehaviour
         {
             m_Animator.Play("StopVogel");
         }
+
     }
 }
