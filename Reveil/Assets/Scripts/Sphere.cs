@@ -17,11 +17,20 @@ public class Sphere : MonoBehaviour
     public Nightmare nightmareScript;
     public LevelLoader levelLoaderScript;
 
+    public AudioClip StardustClip;
+    public AudioClip NextLevelClip;
+    public AudioClip GameOverClip;
+
+    private AudioSource audioSource;
+
+
     private void Start()
     {
         // rb = GetComponent<Rigidbody2D>();
         nightmareScript = FindObjectOfType<Nightmare>();
         levelLoaderScript = FindObjectOfType<LevelLoader>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -64,6 +73,9 @@ public class Sphere : MonoBehaviour
         {
             GameManager.Instance.GameOver();
             GameOverPanel.SetActive(true);
+
+            audioSource.clip = GameOverClip;
+            audioSource.Play();
         }
 
         if (collision.CompareTag("Stardust"))
@@ -77,13 +89,18 @@ public class Sphere : MonoBehaviour
            // }
 
             nightmareScript.curSpeed = nightmareScript.curSpeed * (slowdown * 0.1f);
-            
+
+            audioSource.clip = StardustClip;
+            audioSource.Play();
         }
 
         if (collision.CompareTag("Goal"))
         {
             Destroy(collision.gameObject);
             levelLoaderScript.LoadNextLevel();
+
+            audioSource.clip = NextLevelClip;
+            audioSource.Play();
         }
 
     }
