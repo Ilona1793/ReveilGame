@@ -3842,6 +3842,11 @@ PolygonCollider2D:
       - {x: -5.4115086, y: 4.034211}
       - {x: -5.3724365, y: 4.014675}
       - {x: -5.3724365, y: 4.053747}
+--- !u!1 &1322441328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 740123118436854356, guid: b301b4e932d9f4e4dae2447e4b772be6, type: 3}
+  m_PrefabInstance: {fileID: 909177052}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1343255317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
@@ -4987,7 +4992,7 @@ MonoBehaviour:
   maxY: 11
   minY: -11
   slowdown: 2
-  GameOverPanel: {fileID: 0}
+  GameOverPanel: {fileID: 1322441328}
   nightmareScript: {fileID: 2137644358}
   levelLoaderScript: {fileID: 1616896785}
   StardustClip: {fileID: 8300000, guid: 256980256fa31554db1b805885e0e970, type: 3}

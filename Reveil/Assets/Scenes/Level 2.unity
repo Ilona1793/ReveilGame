@@ -3821,7 +3821,7 @@ MonoBehaviour:
   maxY: 11
   minY: -11
   slowdown: 2
-  GameOverPanel: {fileID: 0}
+  GameOverPanel: {fileID: 1035124572}
   nightmareScript: {fileID: 692114558}
   levelLoaderScript: {fileID: 2134569678}
   StardustClip: {fileID: 8300000, guid: 256980256fa31554db1b805885e0e970, type: 3}
@@ -4090,6 +4090,11 @@ SpriteRenderer:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
   m_PrefabInstance: {fileID: 622634963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1035124572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 740123118436854356, guid: b301b4e932d9f4e4dae2447e4b772be6, type: 3}
+  m_PrefabInstance: {fileID: 502437458}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1092251493
 GameObject:
