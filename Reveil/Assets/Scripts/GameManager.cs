@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public int Score = 0;
     public bool IsGameOver = false;
+    public bool HaveWonGame = false;
     public AudioClip BackgroundMusic;
     public AudioClip DeathMusic;
 
@@ -44,6 +45,14 @@ public class GameManager : MonoBehaviour
                 UnityEngine.SceneManagement.SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
+        if (HaveWonGame)
+        {
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            {
+                ResetGame();
+                SceneManager.LoadScene("MainMenu");
+            }
+        }
         audioSource.clip = BackgroundMusic;
     }
 
@@ -65,5 +74,13 @@ public class GameManager : MonoBehaviour
         audioSource.clip = BackgroundMusic;
         audioSource.loop = true;
         audioSource.Play();
+    }
+
+    public void WonGame()
+    {
+        HaveWonGame = true;
+        // audioSource.clip = DeathMusic;
+        // audioSource.loop = false;
+        // audioSource.Play();
     }
 }

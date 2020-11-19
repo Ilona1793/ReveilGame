@@ -14,6 +14,8 @@ public class Sphere : MonoBehaviour
     // Update is called once per frame
     Vector3 targetPosition;
     public GameObject GameOverPanel;
+    public GameObject WonPanel;
+
     public Nightmare nightmareScript;
     public LevelLoader levelLoaderScript;
 
@@ -103,5 +105,13 @@ public class Sphere : MonoBehaviour
             audioSource.Play();
         }
 
+        if (collision.CompareTag("FinalGoal"))
+        {
+            GameManager.Instance.WonGame();
+            WonPanel.SetActive(true);
+
+            audioSource.clip = GameOverClip;
+            audioSource.Play();
+        }
     }
 }

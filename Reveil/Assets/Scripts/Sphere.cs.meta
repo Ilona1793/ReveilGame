@@ -3,7 +3,14 @@ guid: f5022cdad0b02ff42abd1e5db48048db
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - GameOverPanel: {instanceID: 0}
+  - WinPanel: {instanceID: 0}
+  - nightmareScript: {instanceID: 0}
+  - levelLoaderScript: {instanceID: 0}
+  - StardustClip: {instanceID: 0}
+  - NextLevelClip: {instanceID: 0}
+  - GameOverClip: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

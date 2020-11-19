@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Stardust
   - Shadow
+  - Goal
+  - FinalGoal
   layers:
   - Default
   - TransparentFX
