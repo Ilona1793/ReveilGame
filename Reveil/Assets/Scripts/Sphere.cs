@@ -110,8 +110,7 @@ public class Sphere : MonoBehaviour
             GameManager.Instance.WonGame();
             WonPanel.SetActive(true);
 
-            audioSource.clip = GameOverClip;
-            audioSource.Play();
+            
         }
     }
 }
