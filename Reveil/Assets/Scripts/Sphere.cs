@@ -28,7 +28,7 @@ public class Sphere : MonoBehaviour
 
     private void Start()
     {
-        // rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         nightmareScript = FindObjectOfType<Nightmare>();
         levelLoaderScript = FindObjectOfType<LevelLoader>();
 

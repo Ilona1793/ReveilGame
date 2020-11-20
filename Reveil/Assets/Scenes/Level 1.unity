@@ -337,6 +337,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4489008537550686706, guid: 64dc4b0eda708a04795795b018f9e4b8, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4489008537550686708, guid: 64dc4b0eda708a04795795b018f9e4b8, type: 3}
       propertyPath: m_SortingLayerID
       value: 2002725967
@@ -512,6 +516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Score: 0
   IsGameOver: 0
+  HaveWonGame: 0
   BackgroundMusic: {fileID: 8300000, guid: abb1edd4eea6642a6875355b4c91ad13, type: 3}
   DeathMusic: {fileID: 0}
 --- !u!4 &411290021
@@ -1513,6 +1518,7 @@ MonoBehaviour:
   minY: -11
   slowdown: 2
   GameOverPanel: {fileID: 1701583918}
+  WonPanel: {fileID: 0}
   nightmareScript: {fileID: 769326738}
   levelLoaderScript: {fileID: 1377937026}
   StardustClip: {fileID: 8300000, guid: 256980256fa31554db1b805885e0e970, type: 3}
