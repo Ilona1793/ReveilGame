@@ -108,8 +108,8 @@ public class Sphere : MonoBehaviour
         {
             GameManager.Instance.WonGame();
             WonPanel.SetActive(true);
-            Time.timeScale = 0f;
-            PauseMenu.GameIsPaused = true;
+
+            
         }
     }
 }
