@@ -83,17 +83,37 @@ public class Sphere : MonoBehaviour
         if (collision.CompareTag("Stardust"))
         {
             Destroy(collision.gameObject);
-           // GameManager.Instance.Score += 1;
-           // ScoreText.text = "Score: " + GameManager.Instance.Score;
-           // if(GameManager.Instance.Score == 5)
-           // {
-           //     WinnerPanel.SetActive(true);
-           // }
+            // GameManager.Instance.Score += 1;
+            // ScoreText.text = "Score: " + GameManager.Instance.Score;
+            // if(GameManager.Instance.Score == 5)
+            // {
+            //     WinnerPanel.SetActive(true);
+            // }
 
             nightmareScript.curSpeed = nightmareScript.curSpeed * (slowdown * 0.1f);
 
+
             audioSource.clip = StardustClip;
             audioSource.Play();
+        }
+
+        if (collision.CompareTag("StardustBooster"))
+        {
+            Destroy(collision.gameObject);
+            nightmareScript.curSpeed = nightmareScript.curSpeed * (slowdown * 0.1f);
+
+            //Booster
+            speed = speed + 10f;
+            StartCoroutine(BoostTime());
+
+            audioSource.clip = StardustClip;
+            audioSource.Play();
+        }
+
+        IEnumerator BoostTime()
+        {
+            yield return new WaitForSeconds(1f);
+            speed = speed - 10f;
         }
 
         if (collision.CompareTag("Goal"))

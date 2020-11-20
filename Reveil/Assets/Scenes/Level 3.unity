@@ -816,9 +816,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 9221139885983941384, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_Name
       value: Stardust
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221139885983941384, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
+      propertyPath: m_TagString
+      value: StardustBooster
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
@@ -1702,19 +1718,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.04655974
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.04655974
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.04655974
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 9221139885983941384, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_Name
       value: Stardust (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221139885983941384, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
+      propertyPath: m_TagString
+      value: StardustBooster
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
@@ -2113,19 +2133,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.04655974
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.04655974
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.04655974
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 9221139885983941384, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_Name
       value: Stardust (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221139885983941384, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
+      propertyPath: m_TagString
+      value: StardustBooster
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
@@ -5283,19 +5307,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.04655974
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.04655974
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.04655974
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 9221139885983941384, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_Name
       value: Stardust (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221139885983941384, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
+      propertyPath: m_TagString
+      value: StardustBooster
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}

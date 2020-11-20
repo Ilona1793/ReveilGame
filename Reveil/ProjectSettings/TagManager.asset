@@ -8,6 +8,7 @@ TagManager:
   - Shadow
   - Goal
   - FinalGoal
+  - StardustBooster
   layers:
   - Default
   - TransparentFX
