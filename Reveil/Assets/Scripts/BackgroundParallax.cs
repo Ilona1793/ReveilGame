@@ -15,7 +15,7 @@ public class BackgroundParallax : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
         //wiederholung
         //float temp = (cam.transform.position.x *(1-parallaxEffect));
