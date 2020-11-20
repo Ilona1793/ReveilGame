@@ -28,7 +28,7 @@ public class Sphere : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        // rb = GetComponent<Rigidbody2D>();
         nightmareScript = FindObjectOfType<Nightmare>();
         levelLoaderScript = FindObjectOfType<LevelLoader>();
 
@@ -56,14 +56,15 @@ public class Sphere : MonoBehaviour
 
         targetPosition.y = Mathf.Clamp(targetPosition.y, minY, maxY);
         transform.position = targetPosition;
-        //rb.MovePosition(targetPosition);
 
         mousePosition.x = transform.position.x + 30f;
         //transform.LookAt(mousePosition);
         
     }
 
-   
+    private void FixedUpdate(){
+        //rb.MovePosition(targetPosition);
+    }
 
      //für Collider mit Trigger
     private void OnTriggerEnter2D(Collider2D collision)
