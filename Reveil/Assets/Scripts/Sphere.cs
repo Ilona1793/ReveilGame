@@ -90,7 +90,10 @@ public class Sphere : MonoBehaviour
             //     WinnerPanel.SetActive(true);
             // }
 
-            nightmareScript.curSpeed = nightmareScript.curSpeed * (slowdown * 0.1f);
+            //nightmareScript.curSpeed = nightmareScript.curSpeed * (slowdown * 0.1f);
+            //Booster
+            speed = speed + 5f;
+            StartCoroutine(BoostTime(0.1f));
 
 
             audioSource.clip = StardustClip;
@@ -100,20 +103,20 @@ public class Sphere : MonoBehaviour
         if (collision.CompareTag("StardustBooster"))
         {
             Destroy(collision.gameObject);
-            nightmareScript.curSpeed = nightmareScript.curSpeed * (slowdown * 0.1f);
+            //nightmareScript.curSpeed = nightmareScript.curSpeed * (slowdown * 0.1f);
 
             //Booster
-            speed = speed + 10f;
-            StartCoroutine(BoostTime());
+            speed = speed + 5f;
+            StartCoroutine(BoostTime(1f));
 
             audioSource.clip = StardustClip;
             audioSource.Play();
         }
 
-        IEnumerator BoostTime()
+        IEnumerator BoostTime(float time)
         {
-            yield return new WaitForSeconds(1f);
-            speed = speed - 10f;
+            yield return new WaitForSeconds(time);
+            speed = speed - 5f;
         }
 
         if (collision.CompareTag("Goal"))
