@@ -26,6 +26,13 @@ public class Sphere : MonoBehaviour
     private AudioSource audioSource;
 
 
+
+    //Sternenstaub fliegt zum Spieler
+    //public MoveStardustToSphere[] coin;
+    //public float pickupRange;
+
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,6 +40,7 @@ public class Sphere : MonoBehaviour
         levelLoaderScript = FindObjectOfType<LevelLoader>();
 
         audioSource = GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -59,8 +67,24 @@ public class Sphere : MonoBehaviour
 
         mousePosition.x = transform.position.x + 30f;
         //transform.LookAt(mousePosition);
-        
-    }
+
+
+        /* 
+        //Sternenstaub fliegt zum Spieler
+        for (int i = 0; i < coin.Length; i++)
+        {
+            if (coin[i] != null && Vector3
+                .Distance(transform.position, coin[i].transform.position) <= pickupRange)
+            {
+                // If the coin still references a valid object, and its distance to 
+                // the player transform is within pickup range, 
+                // start moving it towards the player.
+                coin[i].MoveToPlayer(transform);
+            }
+        }*/
+    
+
+}
 
     private void FixedUpdate(){
         //rb.MovePosition(targetPosition);
@@ -98,6 +122,12 @@ public class Sphere : MonoBehaviour
 
             audioSource.clip = StardustClip;
             audioSource.Play();
+
+
+
+            //Sternenstaub fliegt zum Spieler
+            /*collision.gameObject.GetComponent<MoveStardustToSphere>()
+                .MoveToPlayer(transform);*/
         }
 
         if (collision.CompareTag("StardustBooster"))
