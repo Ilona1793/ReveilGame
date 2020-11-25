@@ -1622,6 +1622,8 @@ MonoBehaviour:
   StardustClip: {fileID: 8300000, guid: 256980256fa31554db1b805885e0e970, type: 3}
   NextLevelClip: {fileID: 8300000, guid: af9c1a912ce53124e9a24199d9683ad6, type: 3}
   GameOverClip: {fileID: 8300000, guid: 0a6f4522b2da17f4c87496d7c66123a4, type: 3}
+  coin: []
+  pickupRange: 0
 --- !u!82 &1017186909
 AudioSource:
   m_ObjectHideFlags: 0
