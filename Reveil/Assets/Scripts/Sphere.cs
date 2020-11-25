@@ -28,8 +28,8 @@ public class Sphere : MonoBehaviour
 
 
     //Sternenstaub fliegt zum Spieler
-    //public MoveStardustToSphere[] coin;
-    //public float pickupRange;
+    public MoveStardustToSphere[] coin;
+    public float pickupRange;
 
 
 
@@ -69,7 +69,7 @@ public class Sphere : MonoBehaviour
         //transform.LookAt(mousePosition);
 
 
-        /* 
+        
         //Sternenstaub fliegt zum Spieler
         for (int i = 0; i < coin.Length; i++)
         {
@@ -81,7 +81,7 @@ public class Sphere : MonoBehaviour
                 // start moving it towards the player.
                 coin[i].MoveToPlayer(transform);
             }
-        }*/
+        }
     
 
 }
@@ -126,8 +126,8 @@ public class Sphere : MonoBehaviour
 
 
             //Sternenstaub fliegt zum Spieler
-            /*collision.gameObject.GetComponent<MoveStardustToSphere>()
-                .MoveToPlayer(transform);*/
+            collision.gameObject.GetComponent<MoveStardustToSphere>()
+                .MoveToPlayer(transform);
         }
 
         if (collision.CompareTag("StardustBooster"))
@@ -141,6 +141,10 @@ public class Sphere : MonoBehaviour
 
             audioSource.clip = StardustClip;
             audioSource.Play();
+
+            //Sternenstaub fliegt zum Spieler
+            collision.gameObject.GetComponent<MoveStardustToSphere>()
+                .MoveToPlayer(transform);
         }
 
         IEnumerator BoostTime(float time)

@@ -140,8 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63f31a5f27600f4c9573c3278156f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 0
+  target: {fileID: 1548993850}
+  speed: 1
   isMoving: 0
 --- !u!1 &137033840
 GameObject:
@@ -851,8 +851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63f31a5f27600f4c9573c3278156f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 0
+  target: {fileID: 1548993850}
+  speed: 3
   isMoving: 0
 --- !u!1 &357235040 stripped
 GameObject:
@@ -871,8 +871,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63f31a5f27600f4c9573c3278156f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 0
+  target: {fileID: 1548993850}
+  speed: 3
   isMoving: 0
 --- !u!1 &363225413
 GameObject:
@@ -3974,8 +3974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63f31a5f27600f4c9573c3278156f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 0
+  target: {fileID: 1548993850}
+  speed: 3
   isMoving: 0
 --- !u!1 &1322441328 stripped
 GameObject:
@@ -5041,8 +5041,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63f31a5f27600f4c9573c3278156f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 0
+  target: {fileID: 1548993850}
+  speed: 1
   isMoving: 0
 --- !u!1 &1510064763
 GameObject:
@@ -5171,7 +5171,7 @@ MonoBehaviour:
   NextLevelClip: {fileID: 8300000, guid: af9c1a912ce53124e9a24199d9683ad6, type: 3}
   GameOverClip: {fileID: 8300000, guid: 0a6f4522b2da17f4c87496d7c66123a4, type: 3}
   coin: []
-  pickupRange: 0
+  pickupRange: 100
 --- !u!82 &1548993846
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5268,6 +5268,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &1548993850 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4489008537550686709, guid: 64dc4b0eda708a04795795b018f9e4b8, type: 3}
+  m_PrefabInstance: {fileID: 863177643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1552286018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
@@ -5306,8 +5311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63f31a5f27600f4c9573c3278156f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 0
+  target: {fileID: 1548993850}
+  speed: 1
   isMoving: 0
 --- !u!1 &1688281370
 GameObject:
@@ -6311,8 +6316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63f31a5f27600f4c9573c3278156f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 0
+  target: {fileID: 1548993850}
+  speed: 3
   isMoving: 0
 --- !u!1 &1955275149 stripped
 GameObject:
@@ -6331,8 +6336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63f31a5f27600f4c9573c3278156f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 0
+  target: {fileID: 1548993850}
+  speed: 3
   isMoving: 0
 --- !u!1 &1960182313
 GameObject:
