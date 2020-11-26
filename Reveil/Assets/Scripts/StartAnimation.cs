@@ -25,6 +25,7 @@ public class StartAnimation : MonoBehaviour
         }
 
 
+
         //Level 3
         if (Time.timeSinceLevelLoad >= 10)
         {

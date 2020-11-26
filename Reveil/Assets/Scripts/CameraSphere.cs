@@ -10,7 +10,7 @@ public class CameraSphere : MonoBehaviour
     Vector3 targetPosition;
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
         targetPosition = Vector3.Lerp(transform.position, sphere.transform.position, Time.deltaTime * speed) ;
         targetPosition.z = transform.position.z;

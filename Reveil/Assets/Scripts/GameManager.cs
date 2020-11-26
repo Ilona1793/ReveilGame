@@ -33,7 +33,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        Cursor.visible = false;
+
+        //Mouse Sichtbarkeit
+        //Cursor.visible = false;
     }
 
     void Update()

@@ -9,6 +9,10 @@ public class Sphere : MonoBehaviour
     [SerializeField] private float maxY;
     [SerializeField] private float minY;
 	[SerializeField] private float slowdown;
+
+    [SerializeField] private float maxBoost;
+    [SerializeField] private float minBoost;
+
     Rigidbody2D rb;
     Vector3 mousePosition;
     // Update is called once per frame
@@ -24,6 +28,7 @@ public class Sphere : MonoBehaviour
     public AudioClip GameOverClip;
 
     private AudioSource audioSource;
+
 
 
 
@@ -116,8 +121,8 @@ public class Sphere : MonoBehaviour
 
             //nightmareScript.curSpeed = nightmareScript.curSpeed * (slowdown * 0.1f);
             //Booster
-            speed = speed + 5f;
-            StartCoroutine(BoostTime(0.1f));
+            speed = speed + minBoost;
+            StartCoroutine(BoostTime(1f, minBoost));
 
 
             audioSource.clip = StardustClip;
@@ -136,8 +141,8 @@ public class Sphere : MonoBehaviour
             //nightmareScript.curSpeed = nightmareScript.curSpeed * (slowdown * 0.1f);
 
             //Booster
-            speed = speed + 5f;
-            StartCoroutine(BoostTime(1f));
+            speed = speed + maxBoost;
+            StartCoroutine(BoostTime(1f, maxBoost));
 
             audioSource.clip = StardustClip;
             audioSource.Play();
@@ -147,10 +152,10 @@ public class Sphere : MonoBehaviour
                 .MoveToPlayer(transform);
         }
 
-        IEnumerator BoostTime(float time)
+        IEnumerator BoostTime(float time, float boost)
         {
             yield return new WaitForSeconds(time);
-            speed = speed - 5f;
+            speed = speed - boost;
         }
 
         if (collision.CompareTag("Goal"))
