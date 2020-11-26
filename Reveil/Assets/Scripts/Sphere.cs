@@ -29,8 +29,8 @@ public class Sphere : MonoBehaviour
 
     private AudioSource audioSource;
 
-
-
+    Animator m_Animator;
+ 
 
     //Sternenstaub fliegt zum Spieler
     public MoveStardustToSphere[] coin;
@@ -45,6 +45,11 @@ public class Sphere : MonoBehaviour
         levelLoaderScript = FindObjectOfType<LevelLoader>();
 
         audioSource = GetComponent<AudioSource>();
+
+        m_Animator = gameObject.GetComponent<Animator>();
+        GetComponent<Animator>().enabled = false;
+
+
 
     }
 
@@ -128,6 +133,9 @@ public class Sphere : MonoBehaviour
             audioSource.clip = StardustClip;
             audioSource.Play();
 
+            GetComponent<Animator>().enabled = true;
+            m_Animator.Play("Pulsieren");
+
 
 
             //Sternenstaub fliegt zum Spieler
@@ -147,6 +155,9 @@ public class Sphere : MonoBehaviour
             audioSource.clip = StardustClip;
             audioSource.Play();
 
+            GetComponent<Animator>().enabled = true;
+            m_Animator.Play("Pulsieren");
+
             //Sternenstaub fliegt zum Spieler
             collision.gameObject.GetComponent<MoveStardustToSphere>()
                 .MoveToPlayer(transform);
@@ -156,6 +167,9 @@ public class Sphere : MonoBehaviour
         {
             yield return new WaitForSeconds(time);
             speed = speed - boost;
+            GetComponent<Animator>().enabled = false;
+
+
         }
 
         if (collision.CompareTag("Goal"))
