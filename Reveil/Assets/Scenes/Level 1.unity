@@ -1916,14 +1916,14 @@ PrefabInstance:
     - target: {fileID: 8598935791285946730, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b7d9ead3eaabb4b459e4168e0ae38b54, type: 3}
+      objectReference: {fileID: 21300000, guid: 28898273aa993da438ac292cc6a6bce0, type: 3}
     - target: {fileID: 9221139885983941384, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_Name
       value: Stardust (10)
       objectReference: {fileID: 0}
     - target: {fileID: 9221139885983941384, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
       propertyPath: m_TagString
-      value: StardustBooster
+      value: Stardust
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}
@@ -2412,6 +2412,18 @@ PrefabInstance:
     - target: {fileID: 4489008537550686709, guid: 64dc4b0eda708a04795795b018f9e4b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489008537550686709, guid: 64dc4b0eda708a04795795b018f9e4b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489008537550686709, guid: 64dc4b0eda708a04795795b018f9e4b8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489008537550686709, guid: 64dc4b0eda708a04795795b018f9e4b8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4489008537550686713, guid: 64dc4b0eda708a04795795b018f9e4b8, type: 3}
       propertyPath: m_Name
@@ -6003,6 +6015,8 @@ MonoBehaviour:
   maxY: 11
   minY: -11
   slowdown: 2
+  maxBoost: 5
+  minBoost: 2
   GameOverPanel: {fileID: 1322441328}
   WonPanel: {fileID: 596328807}
   nightmareScript: {fileID: 2137644358}
@@ -6010,6 +6024,8 @@ MonoBehaviour:
   StardustClip: {fileID: 8300000, guid: 256980256fa31554db1b805885e0e970, type: 3}
   NextLevelClip: {fileID: 8300000, guid: af9c1a912ce53124e9a24199d9683ad6, type: 3}
   GameOverClip: {fileID: 8300000, guid: 0a6f4522b2da17f4c87496d7c66123a4, type: 3}
+  coin: []
+  pickupRange: 0
 --- !u!82 &1548993846
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6106,6 +6122,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1548993847
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548993844}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7108c12a2fc63db4086bc88defe85a0d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1552286018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5400949428508688567, guid: 5166d0d3d6f4ae94d87bc8c4cd6f5ffe, type: 3}

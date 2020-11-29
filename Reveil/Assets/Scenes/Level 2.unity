@@ -1615,6 +1615,8 @@ MonoBehaviour:
   maxY: 11
   minY: -11
   slowdown: 2
+  maxBoost: 5
+  minBoost: 2
   GameOverPanel: {fileID: 1701583918}
   WonPanel: {fileID: 0}
   nightmareScript: {fileID: 769326738}

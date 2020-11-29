@@ -9,6 +9,10 @@ public class Sphere : MonoBehaviour
     [SerializeField] private float maxY;
     [SerializeField] private float minY;
 	[SerializeField] private float slowdown;
+
+    [SerializeField] private float maxBoost;
+    [SerializeField] private float minBoost;
+
     Rigidbody2D rb;
     Vector3 mousePosition;
     // Update is called once per frame
@@ -25,7 +29,8 @@ public class Sphere : MonoBehaviour
 
     private AudioSource audioSource;
 
-
+    Animator m_Animator;
+ 
 
     //Sternenstaub fliegt zum Spieler
     public MoveStardustToSphere[] coin;
@@ -40,6 +45,11 @@ public class Sphere : MonoBehaviour
         levelLoaderScript = FindObjectOfType<LevelLoader>();
 
         audioSource = GetComponent<AudioSource>();
+
+        m_Animator = gameObject.GetComponent<Animator>();
+        GetComponent<Animator>().enabled = false;
+
+
 
     }
 
@@ -116,12 +126,15 @@ public class Sphere : MonoBehaviour
 
             //nightmareScript.curSpeed = nightmareScript.curSpeed * (slowdown * 0.1f);
             //Booster
-            speed = speed + 5f;
-            StartCoroutine(BoostTime(0.1f));
+            speed = speed + minBoost;
+            StartCoroutine(BoostTime(1f, minBoost));
 
 
             audioSource.clip = StardustClip;
             audioSource.Play();
+
+            GetComponent<Animator>().enabled = true;
+            m_Animator.Play("Pulsieren");
 
 
 
@@ -136,21 +149,27 @@ public class Sphere : MonoBehaviour
             //nightmareScript.curSpeed = nightmareScript.curSpeed * (slowdown * 0.1f);
 
             //Booster
-            speed = speed + 5f;
-            StartCoroutine(BoostTime(1f));
+            speed = speed + maxBoost;
+            StartCoroutine(BoostTime(1f, maxBoost));
 
             audioSource.clip = StardustClip;
             audioSource.Play();
+
+            GetComponent<Animator>().enabled = true;
+            m_Animator.Play("Pulsieren");
 
             //Sternenstaub fliegt zum Spieler
             collision.gameObject.GetComponent<MoveStardustToSphere>()
                 .MoveToPlayer(transform);
         }
 
-        IEnumerator BoostTime(float time)
+        IEnumerator BoostTime(float time, float boost)
         {
             yield return new WaitForSeconds(time);
-            speed = speed - 5f;
+            speed = speed - boost;
+            GetComponent<Animator>().enabled = false;
+
+
         }
 
         if (collision.CompareTag("Goal"))
