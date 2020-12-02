@@ -172,6 +172,7 @@ public class Sphere : MonoBehaviour
 
         }
 
+
         if (collision.CompareTag("Goal"))
         {
             Destroy(collision.gameObject);
