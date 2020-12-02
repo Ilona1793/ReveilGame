@@ -9,6 +9,7 @@ TagManager:
   - Goal
   - FinalGoal
   - StardustBooster
+  - Checkpoint_Leaves
   layers:
   - Default
   - TransparentFX
