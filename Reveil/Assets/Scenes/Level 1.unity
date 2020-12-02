@@ -4240,6 +4240,7 @@ GameObject:
   - component: {fileID: 1364264428}
   - component: {fileID: 1364264427}
   - component: {fileID: 1364264426}
+  - component: {fileID: 1364264432}
   m_Layer: 0
   m_Name: _FG-06
   m_TagString: Untagged
@@ -4844,6 +4845,25 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!95 &1364264432
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364264421}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29839705fb640c24590a98b5490f7a41, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1377351053
 PrefabInstance:
   m_ObjectHideFlags: 0
