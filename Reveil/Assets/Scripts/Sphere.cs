@@ -155,8 +155,6 @@ public class Sphere : MonoBehaviour
             audioSource.clip = StardustClip;
             audioSource.Play();
 
-            GetComponent<Animator>().enabled = true;
-            m_Animator.Play("Pulsieren");
 
             //Sternenstaub fliegt zum Spieler
             collision.gameObject.GetComponent<MoveStardustToSphere>()
