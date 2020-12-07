@@ -6185,8 +6185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   speedUpDown: 0.8
-  maxY: 11
-  minY: -11
+  maxY: 10
+  minY: -10.5
   slowdown: 2
   maxBoost: 5
   minBoost: 2
