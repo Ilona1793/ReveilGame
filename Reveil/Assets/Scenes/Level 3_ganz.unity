@@ -1926,7 +1926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphere: {fileID: 1017186908}
-  speed: 1
+  speed: 4
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

@@ -7955,7 +7955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphere: {fileID: 1548993845}
-  speed: 1
+  speed: 4
 --- !u!81 &1991084165
 AudioListener:
   m_ObjectHideFlags: 0
