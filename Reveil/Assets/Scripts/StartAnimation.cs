@@ -15,6 +15,17 @@ public class StartAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //MainMenu
+        if (Time.realtimeSinceStartup >= 8)
+        {
+            m_Animator.Play("Title");
+        }
+        else
+        {
+            m_Animator.Play("StopTitle");
+        }
+
+
         //Level 2
         if (Time.timeSinceLevelLoad >= 30)
         {
