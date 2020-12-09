@@ -1417,7 +1417,7 @@ MonoBehaviour:
   Score: 0
   IsGameOver: 0
   HaveWonGame: 0
-  BackgroundMusic: {fileID: 8300000, guid: abb1edd4eea6642a6875355b4c91ad13, type: 3}
+  BackgroundMusic: {fileID: 8300000, guid: 9b5b5f05f9cf740b495a9ee66472ab7f, type: 3}
   DeathMusic: {fileID: 0}
 --- !u!4 &411290021
 Transform:
@@ -1443,7 +1443,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: abb1edd4eea6642a6875355b4c91ad13, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9b5b5f05f9cf740b495a9ee66472ab7f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -3534,9 +3534,9 @@ MonoBehaviour:
   WonPanel: {fileID: 1064735357}
   nightmareScript: {fileID: 769326738}
   levelLoaderScript: {fileID: 1377937026}
-  StardustClip: {fileID: 8300000, guid: 256980256fa31554db1b805885e0e970, type: 3}
-  NextLevelClip: {fileID: 8300000, guid: af9c1a912ce53124e9a24199d9683ad6, type: 3}
-  GameOverClip: {fileID: 8300000, guid: 0a6f4522b2da17f4c87496d7c66123a4, type: 3}
+  StardustClip: {fileID: 8300000, guid: 325873d1b8fc7412ca9a41bc5afa27df, type: 3}
+  NextLevelClip: {fileID: 0}
+  GameOverClip: {fileID: 8300000, guid: 05986e0cbb66944f59a41d53260a8100, type: 3}
   coin: []
   pickupRange: 0
 --- !u!95 &1017186909

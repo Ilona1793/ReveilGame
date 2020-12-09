@@ -2435,7 +2435,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: abb1edd4eea6642a6875355b4c91ad13, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9b5b5f05f9cf740b495a9ee66472ab7f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -2536,7 +2536,7 @@ MonoBehaviour:
   Score: 0
   IsGameOver: 0
   HaveWonGame: 0
-  BackgroundMusic: {fileID: 8300000, guid: abb1edd4eea6642a6875355b4c91ad13, type: 3}
+  BackgroundMusic: {fileID: 8300000, guid: 9b5b5f05f9cf740b495a9ee66472ab7f, type: 3}
   DeathMusic: {fileID: 0}
 --- !u!4 &1936126344
 Transform:
