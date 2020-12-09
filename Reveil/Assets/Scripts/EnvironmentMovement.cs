@@ -18,6 +18,7 @@ public class EnvironmentMovement : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             anim.SetTrigger("move");
+            anim.SetTrigger("CloudTrigger");
         }
     }
 }
