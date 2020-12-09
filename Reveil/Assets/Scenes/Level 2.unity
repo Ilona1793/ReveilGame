@@ -2960,6 +2960,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2963629070986327813, guid: 3745020dc7ebde94d9bbd27ae65a29a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2963629070986327813, guid: 3745020dc7ebde94d9bbd27ae65a29a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2963629070986327813, guid: 3745020dc7ebde94d9bbd27ae65a29a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2963629071752009388, guid: 3745020dc7ebde94d9bbd27ae65a29a6, type: 3}
       propertyPath: m_Name
       value: Tree
