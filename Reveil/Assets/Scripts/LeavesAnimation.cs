@@ -22,6 +22,7 @@ public class LeavesAnimation : MonoBehaviour
         {
             GetComponent<Animator>().enabled = true;
             m_Animator.Play("AhornAnimation");
+            m_Animator.Play("AhornAnimation2");
         }
         else
         {
