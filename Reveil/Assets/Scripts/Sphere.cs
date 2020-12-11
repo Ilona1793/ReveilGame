@@ -142,10 +142,10 @@ public class Sphere : MonoBehaviour
             m_Animator.Play("Pulsieren");
 
 
-
+            /*
             //Sternenstaub fliegt zum Spieler
             collision.gameObject.GetComponent<MoveStardustToSphere>()
-                .MoveToPlayer(transform);
+                .MoveToPlayer(transform);*/
         }
 
         if (collision.CompareTag("StardustBooster"))
@@ -160,10 +160,11 @@ public class Sphere : MonoBehaviour
             audioSource.clip = StardustClip;
             audioSource.Play();
 
-
+            /*
             //Sternenstaub fliegt zum Spieler
             collision.gameObject.GetComponent<MoveStardustToSphere>()
                 .MoveToPlayer(transform);
+            */
         }
 
         IEnumerator BoostTime(float time, float boost)

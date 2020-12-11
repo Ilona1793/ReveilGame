@@ -11,11 +11,14 @@ public class AccelerateTowards : MonoBehaviour
     [SerializeField]
     float fSpeed;
 
-    Rigidbody rigid;
+    Rigidbody2D rigid;
+
+    private bool MoveStardust = false;
 
     void Start()
     {
-        rigid = GetComponent<Rigidbody>();
+
+        rigid = GetComponent<Rigidbody2D>();
         if (transTowards == null)
         {
             transTowards = FindObjectOfType<Sphere>().transform;
@@ -25,6 +28,17 @@ public class AccelerateTowards : MonoBehaviour
 
     void Update()
     {
-        rigid.velocity += (transTowards.position - transform.position).normalized * fSpeed * Time.deltaTime;
+       // if (MoveStardust == true)
+       // {
+            rigid.velocity += ((Vector2)(transTowards.position - transform.position)).normalized * fSpeed * Time.deltaTime;
+       // }
     }
+
+    /*private void OnColliderEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            MoveStardust = true;
+        }
+    }*/
 }
