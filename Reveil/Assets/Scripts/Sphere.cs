@@ -36,10 +36,15 @@ public class Sphere : MonoBehaviour
     public MoveStardustToSphere[] coin;
     public float pickupRange;
 
+   
+
 
 
     private void Start()
     {
+        //Mouse Sichtbarkeit
+        Cursor.visible = false;
+
         rb = GetComponent<Rigidbody2D>();
         nightmareScript = FindObjectOfType<Nightmare>();
         levelLoaderScript = FindObjectOfType<LevelLoader>();
