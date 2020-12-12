@@ -28,17 +28,18 @@ public class AccelerateTowards : MonoBehaviour
 
     void Update()
     {
-       // if (MoveStardust == true)
-       // {
+       if (MoveStardust)
+       {
             rigid.velocity += ((Vector2)(transTowards.position - transform.position)).normalized * fSpeed * Time.deltaTime;
-       // }
+       }
     }
 
-    /*private void OnColliderEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             MoveStardust = true;
+
         }
-    }*/
+    }
 }
