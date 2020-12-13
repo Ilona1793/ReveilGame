@@ -6162,7 +6162,7 @@ MonoBehaviour:
   WonPanel: {fileID: 0}
   nightmareScript: {fileID: 769326738}
   levelLoaderScript: {fileID: 1377937026}
-  StardustClip: {fileID: 8300000, guid: 325873d1b8fc7412ca9a41bc5afa27df, type: 3}
+  StardustClip: {fileID: 8300000, guid: 5e7aae3c3de9949f38c36804ed686d97, type: 3}
   NextLevelClip: {fileID: 0}
   GameOverClip: {fileID: 8300000, guid: 05986e0cbb66944f59a41d53260a8100, type: 3}
   coin: []
