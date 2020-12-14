@@ -22,6 +22,7 @@ public class Sphere : MonoBehaviour
 
     public Nightmare nightmareScript;
     public LevelLoader levelLoaderScript;
+    public PauseMenu pauseMenuScript;
 
     public AudioClip StardustClip;
     public AudioClip NextLevelClip;
@@ -46,6 +47,7 @@ public class Sphere : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         nightmareScript = FindObjectOfType<Nightmare>();
         levelLoaderScript = FindObjectOfType<LevelLoader>();
+        pauseMenuScript = FindObjectOfType<PauseMenu>();
 
         audioSource = GetComponent<AudioSource>();
 
@@ -60,6 +62,10 @@ public class Sphere : MonoBehaviour
     {
         //Mouse Sichtbarkeit
         Cursor.visible = false;
+        if (PauseMenu.GameIsPaused == true) {
+            Cursor.visible = true;
+        }
+        
 
         if (GameManager.Instance.IsGameOver) return;
 
