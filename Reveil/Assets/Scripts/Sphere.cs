@@ -42,8 +42,6 @@ public class Sphere : MonoBehaviour
 
     private void Start()
     {
-        //Mouse Sichtbarkeit
-        Cursor.visible = false;
 
         rb = GetComponent<Rigidbody2D>();
         nightmareScript = FindObjectOfType<Nightmare>();
@@ -60,6 +58,9 @@ public class Sphere : MonoBehaviour
 
     void Update()
     {
+        //Mouse Sichtbarkeit
+        Cursor.visible = false;
+
         if (GameManager.Instance.IsGameOver) return;
 
 

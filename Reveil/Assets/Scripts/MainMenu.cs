@@ -9,9 +9,15 @@ public class MainMenu : MonoBehaviour
 
     public AudioMixer audioMixer;
 
-    // Start Game
-    public void PlayGame()
+    private void Start()
     {
+        //Mouse Sichtbarkeit
+        Cursor.visible = true;
+    }
+        // Start Game
+        public void PlayGame()
+    {
+        Cursor.visible = false;
         SceneManager.LoadScene("Level 1");
     }
 
