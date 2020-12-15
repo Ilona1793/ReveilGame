@@ -20,6 +20,7 @@ public class EnvironmentMovement : MonoBehaviour
             anim.SetTrigger("move");
             anim.SetTrigger("CloudTrigger");
             anim.SetTrigger("LampionTrigger");
+            anim.SetTrigger("SchilfTrigger");
         }
     }
 }
