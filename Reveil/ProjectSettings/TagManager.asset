@@ -11,6 +11,7 @@ TagManager:
   - StardustBooster
   - Checkpoint_Leaves
   - AccelarateStardust
+  - CheckpointGleiter01
   layers:
   - Default
   - TransparentFX

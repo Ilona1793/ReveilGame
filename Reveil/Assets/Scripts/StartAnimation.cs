@@ -26,21 +26,10 @@ public class StartAnimation : MonoBehaviour
         }
 
 
-        //Level 2
-        if (Time.timeSinceLevelLoad >= 30)
-        {
-            m_Animator.Play("AhornAnimation");
-        } else
-        {
-            m_Animator.Play("Stop");
-        }
-
-
-
-        //Level 3
+        //Level 1
         if (Time.timeSinceLevelLoad >= 10)
         {
-            m_Animator.Play("Vogel2");
+            m_Animator.Play("VogelAnimation01");
         }
         else
         {
@@ -49,7 +38,7 @@ public class StartAnimation : MonoBehaviour
 
         if (Time.timeSinceLevelLoad >= 28)
         {
-            m_Animator.Play("Gleiter");
+            m_Animator.Play("GleiterAnimation01");
         }
         else
         {
@@ -64,6 +53,16 @@ public class StartAnimation : MonoBehaviour
         {
             m_Animator.Play("StopVogel");
         }
+
+
+        //Level 3
+        if (Time.timeSinceLevelLoad >= 30)
+        {
+            m_Animator.Play("AhornAnimation");
+        } else
+        {
+            m_Animator.Play("Stop");
+        }     
 
     }
 }
