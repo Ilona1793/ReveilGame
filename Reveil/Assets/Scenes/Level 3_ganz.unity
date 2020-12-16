@@ -12238,8 +12238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2173b475daaad4093a6847ce9f55aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 1.2
-  maxSpeed: 6
+  acceleration: 1.01
+  maxSpeed: 6.5
   curSpeed: 6
 --- !u!4 &776068799 stripped
 Transform:

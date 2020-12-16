@@ -4107,8 +4107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2173b475daaad4093a6847ce9f55aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 1.2
-  maxSpeed: 6
+  acceleration: 1.01
+  maxSpeed: 6.5
   curSpeed: 6
 --- !u!1001 &782624135
 PrefabInstance:
@@ -5671,6 +5671,7 @@ MonoBehaviour:
   WonPanel: {fileID: 0}
   nightmareScript: {fileID: 769326738}
   levelLoaderScript: {fileID: 1377937026}
+  pauseMenuScript: {fileID: 0}
   StardustClip: {fileID: 8300000, guid: 5e7aae3c3de9949f38c36804ed686d97, type: 3}
   NextLevelClip: {fileID: 0}
   GameOverClip: {fileID: 8300000, guid: 05986e0cbb66944f59a41d53260a8100, type: 3}
