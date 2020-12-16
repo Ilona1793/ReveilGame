@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4890473584111073511, guid: 0cbab82e55e4cc043a136ac422568e12, type: 3}
       propertyPath: fSpeed
-      value: 10
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4890473584111073512, guid: 0cbab82e55e4cc043a136ac422568e12, type: 3}
       propertyPath: m_Offset.x
@@ -89,15 +89,15 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: ab6c5b24bcf9ac44ca6db6fc8aa095e3, type: 3}
     - target: {fileID: 5886365583194774794, guid: 0cbab82e55e4cc043a136ac422568e12, type: 3}
       propertyPath: m_Offset.x
-      value: -0.004728258
+      value: -0.0047270735
       objectReference: {fileID: 0}
     - target: {fileID: 5886365583194774794, guid: 0cbab82e55e4cc043a136ac422568e12, type: 3}
       propertyPath: m_Offset.y
-      value: 0.010723982
+      value: 0.010724001
       objectReference: {fileID: 0}
     - target: {fileID: 5886365583194774794, guid: 0cbab82e55e4cc043a136ac422568e12, type: 3}
       propertyPath: m_Radius
-      value: 0.69316196
+      value: 0.98889786
       objectReference: {fileID: 0}
     - target: {fileID: 8363325812636738928, guid: 0cbab82e55e4cc043a136ac422568e12, type: 3}
       propertyPath: m_LocalPosition.x

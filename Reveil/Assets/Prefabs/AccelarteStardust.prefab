@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transTowards: {fileID: 0}
-  fSpeed: 5
+  fSpeed: 30
 --- !u!58 &4890473584111073512
 CircleCollider2D:
   m_ObjectHideFlags: 0
