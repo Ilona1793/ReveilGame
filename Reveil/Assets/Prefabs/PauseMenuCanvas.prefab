@@ -840,7 +840,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 128.44402, y: -312.17886}
+  m_AnchoredPosition: {x: 128.44402, y: -342}
   m_SizeDelta: {x: 300, y: 69.06}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &8972659425157768478
@@ -873,7 +873,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'You had a bad dream.
 
-    click to try again'
+
+    click to try again
+
+    Press Space to go to
+    main menu'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ed72c357e32f2d46a1cf19a94eb1a73, type: 2}
   m_sharedMaterial: {fileID: 7542416521760830584, guid: 0ed72c357e32f2d46a1cf19a94eb1a73, type: 2}
@@ -936,7 +940,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -802.7862, y: -71.52484, z: -811.3585, w: 0}
+  m_margin: {x: -802.7862, y: -168.79646, z: -811.3585, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
