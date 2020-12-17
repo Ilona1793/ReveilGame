@@ -30,7 +30,9 @@ public class AccelerateTowards : MonoBehaviour
     {
        if (MoveStardust)
        {
-            rigid.velocity += ((Vector2)(transTowards.position - transform.position)).normalized * fSpeed * Time.deltaTime;
+            //rigid.velocity += ((Vector2)(transTowards.position - transform.position)).normalized * fSpeed * Time.deltaTime;
+            Vector2 dir = transTowards.position - transform.position;
+            rigid.AddForce(dir.normalized * fSpeed * Time.deltaTime, ForceMode2D.Impulse);
        }
     }
 
@@ -39,7 +41,7 @@ public class AccelerateTowards : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             MoveStardust = true;
-
+            transTowards = collision.gameObject.transform;
         }
     }
 }
