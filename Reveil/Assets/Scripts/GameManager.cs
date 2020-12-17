@@ -42,10 +42,16 @@ public class GameManager : MonoBehaviour
     {
         if(IsGameOver)
         {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 ResetGame();
                 UnityEngine.SceneManagement.SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                ResetGame();
+                SceneManager.LoadScene("MainMenu");
             }
         }
         if (HaveWonGame)
