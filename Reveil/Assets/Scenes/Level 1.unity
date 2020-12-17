@@ -11827,7 +11827,7 @@ MonoBehaviour:
   nightmareScript: {fileID: 2137644358}
   levelLoaderScript: {fileID: 1616896785}
   pauseMenuScript: {fileID: 0}
-  StardustClip: {fileID: 8300000, guid: 5e7aae3c3de9949f38c36804ed686d97, type: 3}
+  StardustClip: {fileID: 8300000, guid: 555a09184e6fb454aaa1025daecdaeeb, type: 3}
   NextLevelClip: {fileID: 0}
   GameOverClip: {fileID: 8300000, guid: 05986e0cbb66944f59a41d53260a8100, type: 3}
   coin: []
