@@ -92,7 +92,7 @@ public class Sphere : MonoBehaviour
 
 
         
-        //Sternenstaub fliegt zum Spieler
+        /*//Sternenstaub fliegt zum Spieler
         for (int i = 0; i < coin.Length; i++)
         {
             if (coin[i] != null && Vector3
@@ -103,7 +103,7 @@ public class Sphere : MonoBehaviour
                 // start moving it towards the player.
                 coin[i].MoveToPlayer(transform);
             }
-        }
+        }*/
     
 
 }
