@@ -174,7 +174,9 @@ public class Sphere : MonoBehaviour
             */
         }
 
-        IEnumerator BoostTime(float time, float boost)
+      
+
+            IEnumerator BoostTime(float time, float boost)
         {
             yield return new WaitForSeconds(time);
             speed = speed - boost;
